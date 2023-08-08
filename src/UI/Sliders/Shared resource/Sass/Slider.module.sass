@@ -1,0 +1,50 @@
+.Accordion
+  display: flex
+  width: 196.4vh
+  height: 330px
+  margin-bottom: 50px
+  flex-direction: row
+  overflow: hidden
+  .slogan
+    font-size: 1.8rem
+    font-weight: bold
+    margin-left: 50px
+  .AccordionStore
+    display: flex
+    flex-direction: row
+    align-items: center
+    position: absolute
+    height: inherit
+    overflow: hidden
+    transition: .6s
+
+.control_left
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  left: -10px
+  width: 50px
+  height: inherit
+  padding: 10px
+  font-weight: bold
+  z-index: 1
+  transition: .3s
+  &:hover
+    background-color: rgba(0, 0, 0, .5)
+.control_right
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  right: -10px
+  width: 90px
+  height: inherit
+  padding: 10px
+  font-weight: bold
+  z-index: 1
+  transition: .3s
+  &:hover
+    background-color: rgba(0, 0, 0, .5)
+.control_hide
+  visibility: hidden

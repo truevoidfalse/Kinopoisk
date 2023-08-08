@@ -1,0 +1,159 @@
+.header
+    display: flex
+    position: fixed
+    justify-content: center
+    z-index: 2
+    box-shadow: 4px 18px 32px 7px rgba(0, 0, 0, 0.5)
+    transition: .3s
+    animation: .5s display-header forwards normal linear
+    .container
+        display: grid
+        width: 100vw
+        margin-top: 20px
+        grid-template-columns: 1fr 4fr 1fr
+        transition: .3s
+        animation: .5s display-header forwards normal linear
+        .navItem
+            display: flex
+            position: relative
+            margin: 10px
+            justify-content: center
+            align-items: center
+            font-size: 1.5rem
+            font-weight: bold
+            justify-content: center
+            align-items: center    
+            .search
+                color: rgba(255, 255, 255, .5)
+                margin-bottom: 10px
+                cursor: pointer
+                transition: .3s
+                &:hover
+                    color: rgba(255, 255, 255, 1)
+            .link
+                display: flex
+                align-items: center
+                &:hover + .navbar
+                    opacity: 1
+                    visibility: visible
+            .navbar
+                display: flex
+                position: fixed
+                width: 15vw
+                left: 20px
+                flex-direction: column
+                border-bottom: 1px solid red
+                visibility: hidden
+                opacity: 0
+                transition: .3s
+                &:hover
+                    visibility: visible
+                    opacity: 1
+                .navbar_item
+                    display: flex
+                    flex-direction: row
+                    padding-left: 45px
+                    margin-top: 20px
+                    & p
+                        font-size: 18px
+                        letter-spacing: 1px
+                        font-weight: bold
+                    &:first-child
+                        margin-top: 380px
+                    &:last-child
+                        margin-bottom: 20px
+                    & .navlink
+                        display: flex
+                        flex-direction: row
+                    & .navlinkActive
+                        display: flex
+                        flex-direction: row
+                        border-bottom: 1px solid red
+
+
+            .icon
+                width: 20px
+                height: 20px
+                margin-right: 20px
+            .navList
+                display: inline-block
+                height: 40px
+                color: rgba(255, 255, 255, .5)
+                margin-right: 35px
+                cursor: pointer
+                transition: .3s
+                &:hover
+                    color: rgba(255, 255, 255, 1)
+            .navListActive
+                display: inline-block
+                height: 40px
+                color: rgba(255, 255, 255, 1)
+                border-bottom: 2px solid red
+                margin-right: 35px
+
+.headerHide
+    display: flex
+    position: fixed
+    justify-content: center
+    z-index: 1
+    box-shadow: 4px 18px 32px 7px rgba(0, 0, 0, 0.5)
+    animation: .3s display-headerHide forwards normal linear
+    .containerHide
+        display: grid
+        width: 196.4vh
+        margin-top: 20px
+        grid-template-columns: 1fr 4fr 1fr
+        transition: .3s
+        animation: .3s display-headerHide forwards normal linear
+        .navItem
+            display: flex
+            position: relative
+            margin: 10px
+            justify-content: center
+            align-items: center
+            font-size: 1.5rem
+            font-weight: bold
+            justify-content: center
+            align-items: center    
+            .search
+                color: rgba(255, 255, 255, .5)
+                margin-bottom: 10px
+                cursor: pointer
+                transition: .3s
+                &:hover
+                    color: rgba(255, 255, 255, 1)
+            .link
+                display: flex
+                align-items: center
+            .icon
+                width: 20px
+                height: 20px
+                margin-right: 20px
+            .navList
+                display: inline-block
+                height: 40px
+                color: rgba(255, 255, 255, .5)
+                margin-right: 35px
+                cursor: pointer
+                transition: .3s
+                &:hover
+                    color: rgba(255, 255, 255, 1)
+            .navListActive
+                display: inline-block
+                height: 40px
+                color: rgba(255, 255, 255, 1)
+                border-bottom: 2px solid red
+                margin-right: 35px
+
+@keyframes display-header
+  0%
+    transform: translateY(-100px)
+  100%
+    transform: translateY(0px)
+
+@keyframes display-headerHide
+  0%
+    transform: translateY(0px)
+  100%
+    transform: translateY(-100px)
+    display: none

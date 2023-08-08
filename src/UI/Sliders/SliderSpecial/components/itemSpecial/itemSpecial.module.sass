@@ -1,0 +1,68 @@
+.item
+  width: 345px
+  height: 520px
+  border: none
+  animation: .5s visible forwards normal linear
+  z-index: -1
+  margin-left: 5px
+  margin-right: 5px
+  transition: .2s
+  .tv_logo
+    position: absolute
+    margin-left: 70px
+    margin-top: 15px
+    width: 27px
+    height: 27px
+    padding-top: 5px
+    padding-bottom: 5px
+    background: rgb(201,86,71)
+    background: linear-gradient(105deg, rgba(201,86,71,1) 4%, rgba(100,46,162,1) 100%)
+  .picture_sub
+    position: relative
+    height: 520px
+    transition: .3s
+    &:hover
+      opacity: 0
+  .picture
+    position: absolute
+    width: 345px
+    height: 520px
+    z-index: -1
+  &:first-child
+    margin-left: 50px
+  &:hover
+    transform: scale(1.1)
+    z-index: 1
+    box-shadow: 0px 5px 12px 25px rgba(0, 0, 0, 0.55)
+  .rating
+    position: absolute
+    font-size: 1.3rem
+    font-weight: bold
+    padding: 3px 20px
+    margin-top: 15px
+    margin-left: 15px
+    background-color: rgb(59, 179, 59)
+    z-index: 1
+  .rating_two
+    position: absolute
+    font-size: 1.3rem
+    font-weight: bold
+    padding: 3px 15px
+    margin-top: 15px
+    margin-left: 15px
+    z-index: 1
+    background-color: rgb(231, 202, 127)
+  .rating_three
+    position: absolute
+    font-size: 1.3rem
+    font-weight: bold
+    padding: 3px 20px
+    margin-top: 15px
+    margin-left: 15px
+    z-index: 1
+    background-color: rgb(119, 119, 119)
+@keyframes visible
+  0%
+    opacity: 0
+  100%
+    opacity: 1

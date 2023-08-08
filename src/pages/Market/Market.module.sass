@@ -1,0 +1,108 @@
+.Release_section
+    width: 100vw
+    .Promo_loading
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 120vh
+        border: 2px solid red
+    .Promo_background
+        width: 100%
+        height: auto
+        aspect-ratio: 16/9
+    .trailer_player
+        width: 100%
+        height: auto
+        aspect-ratio: 16/9
+    .wrapper
+        position: absolute
+        width: inherit
+        height: 1080px
+        top: 0
+        left: 0
+        z-index: 1
+        background-color: rgba(0, 0, 0, .5)
+        .Promo_logo
+            position: absolute
+            top: 46%
+            left: 5%
+            width: 8%
+        .Promo_Block
+            display: flex
+            flex-direction: column
+            position: absolute
+            top: 63%
+            left: 5%
+            width: 50%
+            height: 6%
+            z-index: 1
+            .logo
+                width: 15%
+                padding-bottom: 40px
+            .Promo_title
+                font-size: 2.3rem
+                font-weight: bold
+                color: rgb(134, 142, 251)
+            .Promo_price
+                font-size: 1.3rem
+                font-weight: 200
+        .player_controls
+            display: flex
+            flex-direction: row
+            position: absolute
+            top: 70%
+            left: 5%
+            .content_buttons
+                display: flex
+                flex-direction: row
+                align-items: center
+                ._btn
+                    font-size: 1.5rem
+                    font-weight: bold
+                    margin-right: 10px
+                    padding: 0 1.8rem
+                    height: 5.3rem
+                    border-radius: 100rem
+                    transition: .3s
+                    &:nth-child(1)
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        background: rgb(246,87,55)
+                        background: linear-gradient(90deg, rgba(246,87,55,1) 0%, rgba(91,97,255,1) 75%)
+                    &:nth-child(2)
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        background-color: rgb(29, 29, 29)
+                        &:hover
+                            background-color: rgb(40, 40, 40)
+                    &:nth-child(3)
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        background-color: rgb(29, 29, 29)
+                        &:hover
+                            background-color: rgb(40, 40, 40)
+                    &:nth-child(4)
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        background-color: rgb(29, 29, 29)
+                        &:hover
+                            background-color: rgb(40, 40, 40)
+                    &:hover
+                        transform: scale(1.05)
+        .Promo_discriptions
+            position: absolute
+            font-size: 1.3rem
+            font-weight: 200
+            width: 10%
+            height: 2%
+            top: 79%
+            left: 5%
+
+
+
+    
