@@ -17,45 +17,45 @@ const initialState = {
 
 }
 
-const sliderDramaSlice = createSlice({
-    name: 'sliderDrama',
+const sliderFantasySlice = createSlice({
+    name: 'sliderFantasy',
     initialState,
     reducers: {
-        changeMainDramaCount(state, action) {
+        changeMainFantasyCount(state, action) {
             state.mainCount = action.payload
         },
-        changeMainDramaPosInc(state, action) {
+        changeMainFantasyPosInc(state, action) {
             state.mainPos = state.mainPos += action.payload
         },
-        changeMainDramaPosDec(state, action) {
+        changeMainFantasyPosDec(state, action) {
             state.mainPos = state.mainPos -= action.payload
         },
 
-        changeSubDramaCount(state, action) {
+        changeSubFantasyCount(state, action) {
             state.subCount = action.payload
         },
-        changeSubDramaPosInc(state, action) {
+        changeSubFantasyPosInc(state, action) {
             state.subPos = state.subPos += action.payload
         },
-        changeSubDramaPosDec(state, action) {
+        changeSubFantasyPosDec(state, action) {
             state.subPos = state.subPos -= action.payload
         },
 
-        changeNumDramaHorizInc(state, action) {
+        changeNumFantasyHorizInc(state, action) {
             state.numHoriz = state.numHoriz -= action.payload
         },
-        changeNumDramaHorizDec(state, action) {
+        changeNumFantasyHorizDec(state, action) {
             state.numHoriz = state.numHoriz += action.payload
         },
 
-        changeHideDrama(state, action) {
+        changeHideFantasy(state, action) {
             state.isHide = action.payload
         },
-        changePageDrama(state, action) {
+        changePageFantasy(state, action) {
             state.page = action.payload
         }
     }
 })
 
-export const { changeMainDramaCount, changeMainDramaPosInc, changeMainDramaPosDec, changeSubDramaCount, changeSubDramaPosInc, changeSubDramaPosDec, changeNumDramaHorizInc, changeNumDramaHorizDec, changeHideDrama, changePageDrama } = sliderDramaSlice.actions
-export default sliderDramaSlice.reducer
+export const { changeMainFantasyCount, changeMainFantasyPosInc, changeMainFantasyPosDec, changeSubFantasyCount, changeSubFantasyPosInc, changeSubFantasyPosDec, changeNumFantasyHorizInc, changeNumFantasyHorizDec, changeHideFantasy, changePageFantasy } = sliderFantasySlice.actions
+export default sliderFantasySlice.reducer

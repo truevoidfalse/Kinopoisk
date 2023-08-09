@@ -15,45 +15,45 @@ const initialState = {
 
 }
 
-const sliderForSlice = createSlice({
-    name: 'sliderFor',
+const sliderNewSlice = createSlice({
+    name: 'sliderNew',
     initialState,
     reducers: {
-        changeMainForCount(state, action) {
+        changeMainNewCount(state, action) {
             state.mainCount = action.payload
         },
-        changeMainForPosInc(state, action) {
+        changeMainNewPosInc(state, action) {
             state.mainPos = state.mainPos += action.payload
         },
-        changeMainForPosDec(state, action) {
+        changeMainNewPosDec(state, action) {
             state.mainPos = state.mainPos -= action.payload
         },
 
-        changeSubForCount(state, action) {
+        changeSubNewCount(state, action) {
             state.subCount = action.payload
         },
-        changeSubForPosInc(state, action) {
+        changeSubNewPosInc(state, action) {
             state.subPos = state.subPos += action.payload
         },
-        changeSubForPosDec(state, action) {
+        changeSubNewPosDec(state, action) {
             state.subPos = state.subPos -= action.payload
         },
 
-        changeNumForHorizInc(state, action) {
+        changeNumNewHorizInc(state, action) {
             state.numHoriz = state.numHoriz -= action.payload
         },
-        changeNumForHorizDec(state, action) {
+        changeNumNewHorizDec(state, action) {
             state.numHoriz = state.numHoriz += action.payload
         },
 
-        changeHideFor(state, action) {
+        changeHideNew(state, action) {
             state.isHide = action.payload
         },
-        changePageFor(state, action) {
+        changePageNew(state, action) {
             state.page = action.payload
         }
     }
 })
 
-export const { changeMainForCount, changeMainForPosInc, changeMainForPosDec, changeSubForCount, changeSubForPosInc, changeSubForPosDec, changeNumForHorizInc, changeNumForHorizDec, changeHideFor, changePageFor } = sliderForSlice.actions
-export default sliderForSlice.reducer
+export const { changeMainNewCount, changeMainNewPosInc, changeMainNewPosDec, changeSubNewCount, changeSubNewPosInc, changeSubNewPosDec, changeNumNewHorizInc, changeNumNewHorizDec, changeHideNew, changePageNew } = sliderNewSlice.actions
+export default sliderNewSlice.reducer

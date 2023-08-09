@@ -15,45 +15,45 @@ const initialState = {
 
 }
 
-const sliderSlice = createSlice({
-    name: 'slider',
+const sliderPopularSlice = createSlice({
+    name: 'sliderPopular',
     initialState,
     reducers: {
-        changeMainCount(state, action) {
+        changeMainPopularCount(state, action) {
             state.mainCount = action.payload
         },
-        changeMainPosInc(state, action) {
+        changeMainPopularPosInc(state, action) {
             state.mainPos = state.mainPos += action.payload
         },
-        changeMainPosDec(state, action) {
+        changeMainPopularPosDec(state, action) {
             state.mainPos = state.mainPos -= action.payload
         },
 
-        changeSubCount(state, action) {
+        changeSubPopularCount(state, action) {
             state.subCount = action.payload
         },
-        changeSubPosInc(state, action) {
+        changeSubPopularPosInc(state, action) {
             state.subPos = state.subPos += action.payload
         },
-        changeSubPosDec(state, action) {
+        changeSubPopularPosDec(state, action) {
             state.subPos = state.subPos -= action.payload
         },
 
-        changeNumHorizInc(state, action) {
+        changeNumPopularHorizInc(state, action) {
             state.numHoriz = state.numHoriz -= action.payload
         },
-        changeNumHorizDec(state, action) {
+        changeNumPopularHorizDec(state, action) {
             state.numHoriz = state.numHoriz += action.payload
         },
 
-        changeHide(state, action) {
+        changeHidePopular(state, action) {
             state.isHide = action.payload
         },
-        changePage(state, action) {
+        changePagePopular(state, action) {
             state.page = action.payload
         }
     }
 })
 
-export const { changeMainCount, changeMainPosInc, changeMainPosDec, changeSubCount, changeSubPosInc, changeSubPosDec, changeNumHorizInc, changeNumHorizDec, changeHide, changePage } = sliderSlice.actions
-export default sliderSlice.reducer
+export const { changeMainPopularCount, changeMainPopularPosInc, changeMainPopularPosDec, changeSubPopularCount, changeSubPopularPosInc, changeSubPopularPosDec, changeNumPopularHorizInc, changeNumPopularHorizDec, changeHidePopular, changePagePopular } = sliderPopularSlice.actions
+export default sliderPopularSlice.reducer

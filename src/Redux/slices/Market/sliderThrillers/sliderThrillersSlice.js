@@ -17,45 +17,45 @@ const initialState = {
 
 }
 
-const sliderTwoSlice = createSlice({
-    name: 'sliderTwo',
+const sliderThrillerSlice = createSlice({
+    name: 'sliderThriller',
     initialState,
     reducers: {
-        changeTwoMainCount(state, action) {
+        changeMainThrillerCount(state, action) {
             state.mainCount = action.payload
         },
-        changeTwoMainPosInc(state, action) {
+        changeMainThrillerPosInc(state, action) {
             state.mainPos = state.mainPos += action.payload
         },
-        changeTwoMainPosDec(state, action) {
+        changeMainThrillerPosDec(state, action) {
             state.mainPos = state.mainPos -= action.payload
         },
 
-        changeTwoSubCount(state, action) {
+        changeSubCThrillerount(state, action) {
             state.subCount = action.payload
         },
-        changeTwoSubPosInc(state, action) {
+        changeSubPThrillerosInc(state, action) {
             state.subPos = state.subPos += action.payload
         },
-        changeTwoSubPosDec(state, action) {
+        changeSubPThrillerosDec(state, action) {
             state.subPos = state.subPos -= action.payload
         },
 
-        changeTwoNumHorizInc(state, action) {
+        changeNumHThrillerorizInc(state, action) {
             state.numHoriz = state.numHoriz -= action.payload
         },
-        changeTwoNumHorizDec(state, action) {
+        changeNumHThrillerorizDec(state, action) {
             state.numHoriz = state.numHoriz += action.payload
         },
 
-        changeTwoHide(state, action) {
+        changeHideThriller(state, action) {
             state.isHide = action.payload
         },
-        changeTwoPage(state, action) {
+        changePageThriller(state, action) {
             state.page = action.payload
         }
     }
 })
 
-export const { changeTwoMainCount, changeTwoMainPosInc, changeTwoMainPosDec, changeTwoSubCount, changeTwoSubPosInc, changeTwoSubPosDec, changeTwoNumHorizInc, changeTwoNumHorizDec, changeTwoHide, changeTwoPage } = sliderTwoSlice.actions
-export default sliderTwoSlice.reducer
+export const { changeMainThrillerCount, changeMainThrillerPosInc, changeMainThrillerPosDec, changeSubThrillerCount, changeSubThrillerPosInc, changeSubThrillerPosDec, changeNumThrillerHorizInc, changeNumThrillerHorizDec, changeHideThriller, changePageThriller } = sliderThrillerSlice.actions
+export default sliderThrillerSlice.reducer

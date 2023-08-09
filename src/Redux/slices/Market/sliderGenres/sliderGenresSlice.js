@@ -17,45 +17,45 @@ const initialState = {
 
 }
 
-const sliderSpecialSlice = createSlice({
-    name: 'sliderSpecial',
+const sliderGenresSlice = createSlice({
+    name: 'sliderGenres',
     initialState,
     reducers: {
-        changeMainSpecialCount(state, action) {
+        changeMainGenresCount(state, action) {
             state.mainCount = action.payload
         },
-        changeMainSpecialPosInc(state, action) {
+        changeMainGenresPosInc(state, action) {
             state.mainPos = state.mainPos += action.payload
         },
-        changeMainSpecialPosDec(state, action) {
+        changeMainGenresPosDec(state, action) {
             state.mainPos = state.mainPos -= action.payload
         },
 
-        changeSubSpecialCount(state, action) {
+        changeSubGenresCount(state, action) {
             state.subCount = action.payload
         },
-        changeSubSpecialPosInc(state, action) {
+        changeSubGenresPosInc(state, action) {
             state.subPos = state.subPos += action.payload
         },
-        changeSubSpecialPosDec(state, action) {
+        changeSubGenresPosDec(state, action) {
             state.subPos = state.subPos -= action.payload
         },
 
-        changeNumSpecialHorizInc(state, action) {
+        changeNumGenresHorizInc(state, action) {
             state.numHoriz = state.numHoriz -= action.payload
         },
-        changeNumSpecialHorizDec(state, action) {
+        changeNumGenresHorizDec(state, action) {
             state.numHoriz = state.numHoriz += action.payload
         },
 
-        changeHideSpecial(state, action) {
+        changeHideGenres(state, action) {
             state.isHide = action.payload
         },
-        changePageSpecial(state, action) {
+        changePageGenres(state, action) {
             state.page = action.payload
         }
     }
 })
 
-export const { changeMainSpecialCount, changeMainSpecialPosInc, changeMainSpecialPosDec, changeSubSpecialCount, changeSubSpecialPosInc, changeSubSpecialPosDec, changeNumSpecialHorizInc, changeNumSpecialHorizDec, changeHideSpecial, changePageSpecial } = sliderSpecialSlice.actions
-export default sliderSpecialSlice.reducer
+export const { changeMainGenresCount, changeMainGenresPosInc, changeMainGenresPosDec, changeSubGenresCount, changeSubGenresPosInc, changeSubGenresPosDec, changeNumGenresHorizInc, changeNumGenresHorizDec, changeHideGenres, changePageGenres } = sliderGenresSlice.actions
+export default sliderGenresSlice.reducer

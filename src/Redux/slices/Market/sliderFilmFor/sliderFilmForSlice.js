@@ -17,45 +17,45 @@ const initialState = {
 
 }
 
-const sliderDramaSlice = createSlice({
-    name: 'sliderDrama',
+const sliderFilmForSlice = createSlice({
+    name: 'sliderFilmFor',
     initialState,
     reducers: {
-        changeMainDramaCount(state, action) {
+        changeMainFilmForCount(state, action) {
             state.mainCount = action.payload
         },
-        changeMainDramaPosInc(state, action) {
+        changeMainFilmForPosInc(state, action) {
             state.mainPos = state.mainPos += action.payload
         },
-        changeMainDramaPosDec(state, action) {
+        changeMainFilmForPosDec(state, action) {
             state.mainPos = state.mainPos -= action.payload
         },
 
-        changeSubDramaCount(state, action) {
+        changeSubFilmForCount(state, action) {
             state.subCount = action.payload
         },
-        changeSubDramaPosInc(state, action) {
+        changeSubFilmForPosInc(state, action) {
             state.subPos = state.subPos += action.payload
         },
-        changeSubDramaPosDec(state, action) {
+        changeSubFilmForPosDec(state, action) {
             state.subPos = state.subPos -= action.payload
         },
 
-        changeNumDramaHorizInc(state, action) {
+        changeNumFilmForHorizInc(state, action) {
             state.numHoriz = state.numHoriz -= action.payload
         },
-        changeNumDramaHorizDec(state, action) {
+        changeNumFilmForHorizDec(state, action) {
             state.numHoriz = state.numHoriz += action.payload
         },
 
-        changeHideDrama(state, action) {
+        changeHideFilmFor(state, action) {
             state.isHide = action.payload
         },
-        changePageDrama(state, action) {
+        changePageFilmFor(state, action) {
             state.page = action.payload
         }
     }
 })
 
-export const { changeMainDramaCount, changeMainDramaPosInc, changeMainDramaPosDec, changeSubDramaCount, changeSubDramaPosInc, changeSubDramaPosDec, changeNumDramaHorizInc, changeNumDramaHorizDec, changeHideDrama, changePageDrama } = sliderDramaSlice.actions
-export default sliderDramaSlice.reducer
+export const { changeMainFilmForCount, changeMainFilmForPosInc, changeMainFilmForPosDec, changeSubFilmForCount, changeSubFilmForPosInc, changeSubFilmForPosDec, changeNumFilmForHorizInc, changeNumFilmForHorizDec, changeHideFilmFor, changePageFilmFor } = sliderFilmForSlice.actions
+export default sliderFilmForSlice.reducer
