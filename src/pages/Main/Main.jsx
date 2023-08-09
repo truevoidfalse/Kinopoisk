@@ -61,7 +61,7 @@ const Main = () => {
 
 
     async function fetchBackground() {
-        const { data } = await axios.get('https://api.kinopoisk.dev/v1.3/movie?top10=!null&limit=48')
+        const { data } = await axios.get('https://api.kinopoisk.dev/v1.3/movie?rating.kp=6-8&limit=48')
         async function sortData(data) {
             const iterable = [];
             for (const el of data) {
@@ -120,56 +120,56 @@ const Main = () => {
                     <div style={{ opacity: state >= 400 ? 0 : 1 }} className={styles.Main__container}>
                         <div className={styles.bg}>
                             {dataBackground.data ? dataBackground.data.slice(0, 6).map(el => (
-                                <div className={styles.bg_item}>
+                                <div key={el.id} className={styles.bg_item}>
                                     <img className={styles.img} src={el.backdrop.url} alt="" />
                                 </div>
                             )) : null}
                         </div>
                         <div className={styles.bg}>
                             {dataBackground.data ? dataBackground.data.slice(6, 12).map(el => (
-                                <div className={styles.bg_item}>
+                                <div key={el.id} className={styles.bg_item}>
                                     <img className={styles.img} src={el.backdrop.url} alt="" />
                                 </div>
                             )) : null}
                         </div>
                         <div className={styles.bg}>
                             {dataBackground.data ? dataBackground.data.slice(12, 18).map(el => (
-                                <div className={styles.bg_item}>
+                                <div key={el.id} className={styles.bg_item}>
                                     <img className={styles.img} src={el.backdrop.url} alt="" />
                                 </div>
                             )) : null}
                         </div>
                         <div className={styles.bg}>
                             {dataBackground.data ? dataBackground.data.slice(18, 24).map(el => (
-                                <div className={styles.bg_item}>
+                                <div key={el.id} className={styles.bg_item}>
                                     <img className={styles.img} src={el.backdrop.url} alt="" />
                                 </div>
                             )) : null}
                         </div>
                         <div className={styles.bg}>
                             {dataBackground.data ? dataBackground.data.slice(24, 30).map(el => (
-                                <div className={styles.bg_item}>
+                                <div key={el.id} className={styles.bg_item}>
                                     <img className={styles.img} src={el.backdrop.url} alt="" />
                                 </div>
                             )) : null}
                         </div>
                         <div className={styles.bg}>
                             {dataBackground.data ? dataBackground.data.slice(30, 36).map(el => (
-                                <div className={styles.bg_item}>
+                                <div key={el.id} className={styles.bg_item}>
                                     <img className={styles.img} src={el.backdrop.url} alt="" />
                                 </div>
                             )) : null}
                         </div>
                         <div className={styles.bg}>
                             {dataBackground.data ? dataBackground.data.slice(36, 42).map(el => (
-                                <div className={styles.bg_item}>
+                                <div key={el.id} className={styles.bg_item}>
                                     <img className={styles.img} src={el.backdrop.url} alt="" />
                                 </div>
                             )) : null}
                         </div>
                         <div className={styles.bg}>
                             {dataBackground.data ? dataBackground.data.slice(42, 48).map(el => (
-                                <div className={styles.bg_item}>
+                                <div key={el.id} className={styles.bg_item}>
                                     <img className={styles.img} src={el.backdrop.url} alt="" />
                                 </div>
                             )) : null}
