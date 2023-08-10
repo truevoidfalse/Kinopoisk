@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import { ContentCard } from "../Shared resource/ContentCard/ContentCard";
 
 export const Slider = ({ props, data, refetch, callback, slogan, state, globalState, changeMainCount, changeMainPosInc, changeMainPosDec, changeSubCount, changeSubPosInc, changeSubPosDec, changeNumHorizInc, changeNumHorizDec, changeHide, changePage }) => {
-
+    
     const dispatch = useDispatch()
 
 
