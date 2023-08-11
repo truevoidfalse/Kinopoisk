@@ -31,20 +31,20 @@ const sliderThrillerSlice = createSlice({
             state.mainPos = state.mainPos -= action.payload
         },
 
-        changeSubCThrillerount(state, action) {
+        changeSubThrillerCount(state, action) {
             state.subCount = action.payload
         },
-        changeSubPThrillerosInc(state, action) {
+        changeSubPThrillerInc(state, action) {
             state.subPos = state.subPos += action.payload
         },
-        changeSubPThrillerosDec(state, action) {
+        changeSubThrillerDec(state, action) {
             state.subPos = state.subPos -= action.payload
         },
 
-        changeNumHThrillerorizInc(state, action) {
+        changeNumThrillerorizInc(state, action) {
             state.numHoriz = state.numHoriz -= action.payload
         },
-        changeNumHThrillerorizDec(state, action) {
+        changeNumThrillerorizDec(state, action) {
             state.numHoriz = state.numHoriz += action.payload
         },
 

@@ -11,7 +11,6 @@ export const Slider = ({ props, data, refetch, callback, slogan, state, globalSt
     
     const dispatch = useDispatch()
 
-
     useEffect(() => {
         if(props) {
             dispatch(changeMainCount(Math.floor(props.length / 5)))
